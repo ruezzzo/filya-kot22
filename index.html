@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaming Headsets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-dots"></canvas>
+
+  <header class="site-header">
+    <div class="left">
+      <div class="logo">🎧</div>
+
+      <!-- 🔍 Image search button -->
+      <button id="toggleSearch" class="search-btn">
+        <img src="search.svg" alt="Search" class="search-img">
+      </button>
+
+      <!-- Hidden search panel -->
+      <div class="search-panel" id="searchPanel">
+        <button id="closeSearch" class="close-btn">✖</button>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search headsets..." />
+          <button id="searchBtn">→</button>
+          <div id="searchHints" class="search-hints-dropdown"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-right">
+      <a href="#new-sets">NEW SETS</a>
+      <a href="#collabs">COLLABORATIONS</a>
+      <a href="#other">OTHER HEADSETS</a>
+      <a class="cart" href="#">🛒</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- HERO / BEST SELLERS -->
+    <section class="hero">
+      <h1 class="title">GAMING HEADSETS</h1>
+      <h2 class="subtitle">BEST SELLERS</h2>
+
+      <div class="product-grid">
+        <article class="product">
+          <div class="img-wrap"><img src="Barracuda.svg"  alt="Razer Barracuda Pro"></div>
+          <h3>Razer Barracuda Pro</h3>
+          <p class="price">US$119.99</p>
+          <p class="desc">Wireless Gaming Headset</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="img-wrap"><img src="BlackShark.svg" alt="Razer BlackShark V3 X"></div>
+          <h3>Razer BlackShark V3 X</h3>
+          <p class="price">US$149.99</p>
+          <p class="desc">Wireless Esport Headset</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="img-wrap"><img src="Kitty.svg" alt="Razer Kraken Kitty V3"></div>
+          <h3>Razer Kraken Kitty V3</h3>
+          <p class="price">US$129.99</p>
+          <p class="desc">RGB Gaming Headset</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEW HEADSET -->
+    <section id="new-sets" class="new-headset">
+      <h2 class="section-title">NEW HEADSET</h2>
+      <div class="new-content">
+        <div class="left-col">
+          <div class="price-old">99.99$</div>
+          <div class="price-now">67.32$</div>
+          <div class="img-wrap big"><img src="Kraken.svg" class="Kraken" alt="Kraken V4 X"></div>
+        </div>
+        <div class="right-col">
+          <div class="discount-badge">-32%</div>
+          <h3 class="product-name">Razer Kraken V4 X</h3>
+          <p class="product-text">
+            Dive into a vivid spectrum of sound with the Razer Kraken V4 X — a wired gaming headset powered by Razer Chroma™ RGB. Now upgraded with a convertible Type C and Type A cable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLABORATIONS -->
+    <section id="collabs" class="collabs">
+      <h2 class="section-title">COLLABORATIONS</h2>
+
+      <div class="carousel">
+        <button class="carousel-btn left" data-dir="left">←</button>
+
+        <div class="carousel-window">
+          <div class="carousel-track">
+            <div class="slide"><img src="ZZZ.svg" alt="Collab 1"><div class="badge">Razer × ZZZ</div></div>
+            <div class="slide"><img src="minekampfRazer.jpg" alt="Collab 2"><div class="badge">Razer × Minecraft</div></div>
+            <div class="slide"><img src="Pokemon.jpg" alt="Collab 3"><div class="badge">Razer × Pokemon</div></div>
+          </div>
+        </div>
+
+        <button class="carousel-btn right" data-dir="right">→</button>
+      </div>
+
+      <div class="carousel-dots"></div>
+    </section>
+
+    <!-- OTHER HEADSETS -->
+    <section id="other" class="section">
+      <h2 class="section-title">More Headsets</h2>
+      <div class="product-grid">
+        <article class="product">
+          <div class="img-wrap"><img src="KairaX.svg" alt="Razer Kaira X"></div>
+          <h3>Razer Kaira X</h3>
+          <p class="price">US$59.99</p>
+          <p class="desc">Wired Gaming Headset for Xbox</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="img-wrap"><img src="HammerHead.svg" alt="Razer Hammerhead Pro"></div>
+          <h3>Razer Hammerhead Pro</h3>
+          <p class="price">US$199.99</p>
+          <p class="desc">Wireless ANC Earbuds with RGB</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="img-wrap"><img src="NariULT.svg" alt="Razer Nari Ultimate"></div>
+          <h3>Razer Nari Ultimate</h3>
+          <p class="price">US$169.99</p>
+          <p class="desc">Haptic Feedback Wireless Headset</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="img-wrap"><img src="OpusX.svg" alt="Razer Opus X"></div>
+          <h3>Razer Opus X</h3>
+          <p class="price">US$99.99</p>
+          <p class="desc">Bluetooth Headset with ANC</p>
+          <div class="actions">
+            <button class="btn outline">LEARN MORE</button>
+            <button class="btn solid">BUY NOW</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Gaming Headsets</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
